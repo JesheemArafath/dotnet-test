@@ -8,5 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.1.1
-      - name: Run './build.sh Build'
-        run: ./build.sh ProjectA ProjectB
+      - name: Buid the project if changes were made
+        run: |
+            chmod a+x ./build.sh
+            ./build.sh ProjectA ProjectB
