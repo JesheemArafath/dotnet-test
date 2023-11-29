@@ -12,7 +12,7 @@ namespace projectA
 
         static async Task RunCounterAsync(string[] args)
         {   
-            Console.WriteLine("Counter starts hear!");
+            Console.WriteLine("Counter starts hear !");
             var counter = 0;
             var max = args.Length != 0 ? Convert.ToInt32(args[0]) : -1;
             while (max == -1 || counter < max)

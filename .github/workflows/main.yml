@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Clone the repo
         uses: actions/checkout@v4.1.1
+        with: 
+          depth: 2
       
       - name: Buid the project if changes were made
         run: |
