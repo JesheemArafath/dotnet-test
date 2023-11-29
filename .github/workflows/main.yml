@@ -3,8 +3,8 @@ name: continuous
 on: [push]
 
 jobs:
-  ubuntu-latest:
-    name: ubuntu-latest
+  pipline:
+    name: pipeline
     runs-on: ubuntu-latest
     steps:
       - name: Clone the repo
