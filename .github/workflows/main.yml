@@ -1,0 +1,12 @@
+name: continuous
+
+on: [push]
+
+jobs:
+  ubuntu-latest:
+    name: ubuntu-latest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4.1.1
+      - name: Run './build.sh Build'
+        run: ./build.sh ProjectA ProjectB
