@@ -81,7 +81,7 @@ class Build : NukeBuild
     // readonly AbsolutePath ApiProject2 = "C:/Arafath/Dev/dotnet/src/projectA";
     Target ProjectA => _ => _
     .OnlyWhenDynamic(() => {
-        return isAnyFileModified(projectAFiles);
+        return true;
     })
     .Executes(() =>
     {
