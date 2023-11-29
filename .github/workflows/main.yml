@@ -7,8 +7,13 @@ jobs:
     name: ubuntu-latest
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.1.1
+      - name: Clone the repo
+        uses: actions/checkout@v4.1.1
+      
       - name: Buid the project if changes were made
         run: |
-            chmod a+x ./build.sh
-            ./build.sh ProjectA ProjectB
+              chmod a+x ./build.sh
+              ./build.sh ProjectA ProjectB
+
+      - name: List docker images
+        run: docker image ls
