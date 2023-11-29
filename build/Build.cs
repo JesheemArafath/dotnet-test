@@ -23,10 +23,6 @@ using System.Text.RegularExpressions;
 class Build : NukeBuild
 {
 
-    [Solution] readonly Solution Solution;
-    
-    [GitRepository] readonly GitRepository Repository;
-
     /// Support plugins are available for:
     ///   - JetBrains ReSharper        https://nuke.build/resharper
     ///   - JetBrains Rider            https://nuke.build/rider
@@ -35,11 +31,11 @@ class Build : NukeBuild
 
 
     private List<string> projectAFiles = new List<string>{
-        @"^ProjectA/.*\.cs$"
+        @"^src/projectA/.*\.cs$"
     };
 
     private List<string> projectBFiles = new List<string>{
-        @"^ProjectB/.*\.cs$"
+        @"^src/projectB/.*\.cs$"
     };
 
     private bool isAnyFileModified(List<string> pathPatterns) {
@@ -81,7 +77,7 @@ class Build : NukeBuild
     // readonly AbsolutePath ApiProject2 = "C:/Arafath/Dev/dotnet/src/projectA";
     Target ProjectA => _ => _
     .OnlyWhenDynamic(() => {
-        return true;
+        return isAnyFileModified(projectAFiles);
     })
     .Executes(() =>
     {
