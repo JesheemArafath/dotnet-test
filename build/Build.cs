@@ -29,11 +29,13 @@ class Build : NukeBuild
 
 
     private List<string> projectAFiles = new List<string>{
-        @"^src/projectA/.*\.cs$"
+        @"^src/projectA/.*\.cs$",
+        @"^src/projectA/Dockerfile$",
     };
 
     private List<string> projectBFiles = new List<string>{
-        @"^src/projectB/.*\.cs$"
+        @"^src/projectB/.*\.cs$",
+        @"^src/projectB/Dockerfile$",
     };
 
     private bool isAnyFileModified(List<string> pathPatterns) {
