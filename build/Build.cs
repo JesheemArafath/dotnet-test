@@ -14,10 +14,8 @@ using static Nuke.Common.IO.PathConstruction;
 using Nuke.Common.Tools.Git;
 
 using Nuke.Common.Git;
-using Serilog;
 using Nuke.Common.Tools.Docker;
 using System.Collections.Generic;
-using Octokit;
 using System.Text.RegularExpressions;
 
 class Build : NukeBuild
