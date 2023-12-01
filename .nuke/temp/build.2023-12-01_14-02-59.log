@@ -1,0 +1,43 @@
+V |                      | ArgumentsFromParametersFile.OnBuildCreated (150)
+V |                      | Passing value for <unresolved> (dotnet.sln)
+V |                      | HandleReSharperSurrogateArguments.OnBuildCreated (150)
+V |                      | InjectParameterValues.OnBuildCreated (100)
+V |                      | HandleShellCompletion.OnBuildCreated (75)
+V |                      | GenerateBuildServerConfigurations.OnBuildCreated (50)
+V |                      | InvokeBuildServerConfigurationGeneration.OnBuildCreated (45)
+V |                      | UpdateNotification.OnBuildCreated (10)
+V |                      | UnsetVisualStudioEnvironmentVariables.OnBuildCreated (0)
+V |                      | HandleVisualStudioDebugging.OnBuildCreated (0)
+V |                      | EventInvoker.OnBuildCreated (-3.4028235E+38)
+V |                      | HandlePlanRequests.OnBuildInitialized (10)
+V |                      | HandleHelpRequests.OnBuildInitialized (5)
+V |                      | Telemetry.OnBuildInitialized (0)
+V |                      | InjectNonParameterValues.OnBuildInitialized (-100)
+V |                      | EventInvoker.OnBuildInitialized (-3.4028235E+38)
+I |                      | > "C:\Program Files\Git\cmd\git.exe" show --name-only
+V |                      | @ C:\Arafath\Dev\dotnet
+D |                      | commit 7039c0ae0f546fe4c3fbe6b924b4e68a327ecc91
+D |                      | Author: JesheemArafath <jesheemarafath@gmail.com>
+D |                      | Date:   Wed Nov 29 16:27:33 2023 +0530
+D |                      | 
+D |                      |     Readme file was edited
+D |                      | 
+D |                      | README.md
+D |                      | src/projectB/Program.cs
+V | ProjectB             | EventInvoker.OnTargetRunning (-3.4028235E+38)
+V | ProjectB             | Telemetry.OnTargetSucceeded (0)
+V | ProjectB             | EventInvoker.OnTargetSucceeded (-3.4028235E+38)
+I |                      | > "C:\Program Files\Git\cmd\git.exe" show --name-only
+V |                      | @ C:\Arafath\Dev\dotnet
+D |                      | commit 7039c0ae0f546fe4c3fbe6b924b4e68a327ecc91
+D |                      | Author: JesheemArafath <jesheemarafath@gmail.com>
+D |                      | Date:   Wed Nov 29 16:27:33 2023 +0530
+D |                      | 
+D |                      |     Readme file was edited
+D |                      | 
+D |                      | README.md
+D |                      | src/projectB/Program.cs
+V |                      | EventInvoker.OnTargetSkipped (-3.4028235E+38)
+V |                      | UpdateNotification.OnBuildFinished (10)
+V |                      | SerializeBuildServerState.OnBuildFinished (0)
+V |                      | EventInvoker.OnBuildFinished (-3.4028235E+38)
